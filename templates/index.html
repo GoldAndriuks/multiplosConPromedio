@@ -5,7 +5,18 @@
     <title>FlaskApp</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>Welcome to FlaskApp!</h2>
+    <h1>Números</h1>
+    <ol>
+        {% for n in range(0, longitud) %}
+            <li>{{ numeros[n] }}</li>
+        {% endfor %}
+    </ol>
+
+    <h1>Últimos números primos</h1>
+    <ol>
+        {% for n in range(0, longitud) %}
+            <li>{{ primos[n] }}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
